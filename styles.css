@@ -1,0 +1,1271 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #0d1117;
+    --bg-secondary: #161b22;
+    --bg-tertiary: #21262d;
+    --border-color: #30363d;
+    --text-primary: #c9d1d9;
+    --text-secondary: #8b949e;
+    --link-color: #58a6ff;
+    --link-hover: #1f6feb;
+    --green: #238636;
+    --blue: #1f6feb;
+    --purple: #8957e5;
+    --orange: #d29922;
+    --red: #da3633;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Навигация */
+.navbar {
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.logo svg {
+    color: var(--link-color);
+}
+
+.main-nav {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+    background-color: var(--bg-tertiary);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.search-box input {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 8px 12px;
+    border-radius: 6px;
+    width: 300px;
+    font-size: 14px;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: var(--link-color);
+}
+
+.btn-primary {
+    background-color: var(--green);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #2ea043;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Hero секция */
+.hero {
+    padding: 64px 0;
+    text-align: center;
+    background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    background: linear-gradient(90deg, #58a6ff 0%, #bc8cff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    color: var(--text-secondary);
+    max-width: 800px;
+    margin: 0 auto 48px;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--link-color);
+}
+
+.stat-label {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+/* Секция активности */
+.activity-section {
+    padding: 48px 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.section-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.filter-tabs {
+    display: flex;
+    gap: 8px;
+}
+
+.tab {
+    background-color: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.tab:hover {
+    border-color: var(--text-secondary);
+}
+
+.tab.active {
+    background-color: var(--blue);
+    color: white;
+    border-color: var(--blue);
+}
+
+/* Список репозиториев */
+.repo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.repo-card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 16px;
+    transition: border-color 0.2s;
+}
+
+.repo-card:hover {
+    border-color: var(--text-secondary);
+}
+
+.repo-header {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.repo-icon {
+    color: var(--text-secondary);
+    padding-top: 2px;
+}
+
+.repo-info {
+    flex: 1;
+}
+
+.repo-title {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.repo-title:hover {
+    text-decoration: underline;
+}
+
+.repo-description {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.repo-meta {
+    display: flex;
+    gap: 16px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    flex-wrap: wrap;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.meta-item svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Бейджи коммитов */
+.commit-badge {
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.commit-badge.discovery {
+    background-color: rgba(56, 139, 253, 0.15);
+    color: #58a6ff;
+}
+
+.commit-badge.analysis {
+    background-color: rgba(137, 87, 229, 0.15);
+    color: #bc8cff;
+}
+
+.commit-badge.theory {
+    background-color: rgba(210, 153, 34, 0.15);
+    color: #d29922;
+}
+
+.commit-badge.preservation {
+    background-color: rgba(35, 134, 54, 0.15);
+    color: #3fb950;
+}
+
+.commit-badge.maintenance {
+    background-color: rgba(139, 148, 158, 0.15);
+    color: #8b949e;
+}
+
+/* Популярные исследования */
+.trending-section {
+    padding: 48px 0;
+    background-color: var(--bg-secondary);
+}
+
+.trending-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.trending-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 24px;
+}
+
+.trending-card {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 20px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.trending-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--text-secondary);
+}
+
+.trending-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 12px;
+}
+
+.trending-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+
+.trending-stars {
+    color: var(--orange);
+    font-size: 14px;
+    white-space: nowrap;
+    margin-left: 12px;
+}
+
+.trending-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.trending-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: var(--bg-tertiary);
+    color: var(--link-color);
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+/* Футер */
+.footer {
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    padding: 48px 0 24px;
+    margin-top: 48px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.footer-section h4 {
+    color: var(--text-primary);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer-section a:hover {
+    color: var(--link-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-bottom p {
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+    }
+    
+    .nav-left {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .main-nav {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .search-box input {
+        width: 100%;
+    }
+    
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    
+    .trending-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Дополнительные стили для страниц репозитория и коммитов */
+
+/* Хлебные крошки */
+.breadcrumb-section {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: var(--text-secondary);
+}
+
+.breadcrumb a.active {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Заголовок репозитория */
+.repo-header-section {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.repo-title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.repo-title-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.repo-icon-large {
+    color: var(--text-secondary);
+}
+
+.repo-title-bar h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.repo-visibility {
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.repo-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-action {
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background-color 0.2s;
+}
+
+.btn-action:hover {
+    background-color: var(--bg-secondary);
+}
+
+.btn-action .count {
+    background-color: var(--bg-primary);
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.repo-desc {
+    color: var(--text-secondary);
+    font-size: 16px;
+}
+
+/* Навигация репозитория */
+.repo-nav-section {
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.repo-tabs {
+    display: flex;
+    gap: 4px;
+}
+
+.repo-tab {
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.repo-tab:hover {
+    background-color: var(--bg-tertiary);
+}
+
+.repo-tab.active {
+    border-bottom-color: var(--orange);
+}
+
+.tab-count {
+    background-color: var(--bg-tertiary);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Контент репозитория */
+.repo-content {
+    padding: 24px 0;
+}
+
+.repo-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 24px;
+}
+
+.repo-main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Последний коммит */
+.latest-commit {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.commit-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.commit-avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.commit-author {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.commit-message {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.commit-message:hover {
+    text-decoration: underline;
+}
+
+.commit-meta {
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.commit-hash {
+    font-family: monospace;
+    background-color: var(--bg-tertiary);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.commit-time {
+    color: var(--text-secondary);
+}
+
+/* Файловая структура */
+.file-explorer {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.file-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.file-count {
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+.file-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.file-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 12px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.2s;
+    align-items: center;
+}
+
+.file-item:last-child {
+    border-bottom: none;
+}
+
+.file-item:hover {
+    background-color: var(--bg-tertiary);
+}
+
+.file-item.active {
+    background-color: rgba(56, 139, 253, 0.1);
+}
+
+.file-item svg {
+    color: var(--text-secondary);
+}
+
+.file-item.folder svg {
+    color: var(--blue);
+}
+
+.file-item a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.file-item a:hover {
+    text-decoration: underline;
+}
+
+.file-desc {
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+
+.file-time {
+    color: var(--text-secondary);
+    font-size: 12px;
+    text-align: right;
+}
+
+/* README */
+.readme-section {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.readme-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.readme-content {
+    padding: 24px;
+}
+
+.readme-content h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.readme-content h3 {
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.readme-content p {
+    margin-bottom: 16px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.readme-content ul {
+    margin-bottom: 16px;
+    padding-left: 24px;
+}
+
+.readme-content li {
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+}
+
+.readme-content strong {
+    color: var(--text-primary);
+}
+
+/* Боковая панель */
+.repo-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sidebar-section {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.sidebar-section h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.sidebar-desc {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.sidebar-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar-stat {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.sidebar-stat svg {
+    color: var(--text-secondary);
+}
+
+.sidebar-stat strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Типы коммитов в сайдбаре */
+.commit-types {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.commit-type-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.commit-type-count {
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Координаты */
+.coordinates {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.coord-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.coord-label {
+    color: var(--text-secondary);
+}
+
+.coord-value {
+    color: var(--text-primary);
+    font-family: monospace;
+}
+
+.btn-secondary {
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--bg-primary);
+}
+
+/* Команда */
+.contributors {
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.contributor {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--bg-secondary);
+    transition: transform 0.2s;
+}
+
+.contributor:hover {
+    transform: scale(1.1);
+}
+
+.contributor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contributor-count {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--bg-tertiary);
+    border: 2px solid var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+/* Коммиты страница */
+.commits-section {
+    padding: 24px 0;
+}
+
+.commits-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.commits-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.commits-filters {
+    display: flex;
+    gap: 12px;
+}
+
+.filter-select {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.commits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Карточка коммита */
+.commit-card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    transition: border-color 0.2s;
+}
+
+.commit-card:hover {
+    border-color: var(--text-secondary);
+}
+
+.commit-main {
+    flex: 1;
+    display: flex;
+    gap: 12px;
+}
+
+.commit-avatar-wrapper {
+    position: relative;
+}
+
+.commit-avatar-large {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.device-badge,
+.user-badge {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    font-size: 14px;
+    background-color: var(--bg-secondary);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.commit-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.commit-title-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.commit-title-link {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.commit-title-link:hover {
+    text-decoration: underline;
+}
+
+.commit-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    flex-wrap: wrap;
+}
+
+.commit-author-name {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.commit-verified {
+    color: var(--green);
+}
+
+.commit-org {
+    color: var(--text-secondary);
+}
+
+.commit-stats {
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    flex-wrap: wrap;
+}
+
+.commit-stat {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.commit-stat.additions {
+    color: var(--green);
+}
+
+.commit-stat.deletions {
+    color: var(--red);
+}
+
+.commit-location {
+    color: var(--text-secondary);
+}
+
+.commit-images {
+    color: var(--purple);
+}
+
+.commit-description {
+    margin-top: 8px;
+    padding: 12px;
+    background-color: var(--bg-tertiary);
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.commit-hash-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-icon {
+    background-color: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.btn-icon:hover {
+    background-color: var(--bg-tertiary);
+}
+
+/* Пагинация */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.pagination-btn {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background-color 0.2s;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background-color: var(--bg-tertiary);
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-info {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+/* Адаптивность для страниц репозитория */
+@media (max-width: 1024px) {
+    .repo-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .repo-sidebar {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .repo-title-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .commits-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .commits-filters {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .filter-select {
+        width: 100%;
+    }
+    
+    .commit-card {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .commit-hash-wrapper {
+        align-self: flex-end;
+    }
+}

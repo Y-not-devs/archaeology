@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArcheoHub - Платформа археологических данных</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <header class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-left">
+                    <a href="index.html" class="logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 2L4 8V14C4 21 8 27 16 30C24 27 28 21 28 14V8L16 2Z" fill="currentColor"/>
+                        </svg>
+                        ArcheoHub
+                    </a>
+                    <nav class="main-nav">
+                        <a href="#" class="nav-link">Исследования</a>
+                        <a href="#" class="nav-link">Находки</a>
+                        <a href="#" class="nav-link">Команды</a>
+                        <a href="#" class="nav-link">Карта</a>
+                    </nav>
+                </div>
+                <div class="nav-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="Поиск репозиториев...">
+                    </div>
+                    <button class="btn-primary">Новое исследование</button>
+                    <div class="user-menu">
+                        <img src="https://via.placeholder.com/32" alt="User" class="avatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Баннер -->
+        <section class="hero">
+            <div class="container">
+                <h1>Открытая платформа археологических данных</h1>
+                <p class="hero-subtitle">Управляйте археологическими находками как кодом — с историей изменений, рецензированием и совместной работой</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">2,847</span>
+                        <span class="stat-label">репозиториев</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15,392</span>
+                        <span class="stat-label">коммитов</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1,204</span>
+                        <span class="stat-label">исследователей</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Недавняя активность -->
+        <section class="activity-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Недавняя активность</h2>
+                    <div class="filter-tabs">
+                        <button class="tab active">Все</button>
+                        <button class="tab">Discovery</button>
+                        <button class="tab">Analysis</button>
+                        <button class="tab">Theory</button>
+                    </div>
+                </div>
+
+                <!-- Список репозиториев -->
+                <div class="repo-list">
+                    <!-- Репозиторий 1 -->
+                    <div class="repo-card">
+                        <div class="repo-header">
+                            <div class="repo-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
+                                </svg>
+                            </div>
+                            <div class="repo-info">
+                                <h3><a href="repository.html" class="repo-title">europe / greece / crete / knossos-palace</a></h3>
+                                <p class="repo-description">Минойский дворец, раскопки централиного комплекса, бронзовый век</p>
+                            </div>
+                        </div>
+                        <div class="repo-meta">
+                            <span class="meta-item">
+                                <span class="commit-badge discovery">Discovery</span>
+                                24 новых коммита
+                            </span>
+                            <span class="meta-item">
+                                <svg width="16" height="16" fill="currentColor"><path d="M8 0a8 8 0 110 16A8 8 0 018 0z"/></svg>
+                                Слой III-B
+                            </span>
+                            <span class="meta-item">Обновлено 2 часа назад</span>
+                        </div>
+                    </div>
+
+                    <!-- Репозиторий 2 -->
+                    <div class="repo-card">
+                        <div class="repo-header">
+                            <div class="repo-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
+                                </svg>
+                            </div>
+                            <div class="repo-info">
+                                <h3><a href="repository.html" class="repo-title">asia / egypt / luxor / valley-of-kings / kv62</a></h3>
+                                <p class="repo-description">Гробница Тутанхамона, восточная камера, повторный анализ артефактов</p>
+                            </div>
+                        </div>
+                        <div class="repo-meta">
+                            <span class="meta-item">
+                                <span class="commit-badge analysis">Analysis</span>
+                                8 новых коммитов
+                            </span>
+                            <span class="meta-item">
+                                <svg width="16" height="16" fill="currentColor"><path d="M8 0a8 8 0 110 16A8 8 0 018 0z"/></svg>
+                                Слой I
+                            </span>
+                            <span class="meta-item">Обновлено 5 часов назад</span>
+                        </div>
+                    </div>
+
+                    <!-- Репозиторий 3 -->
+                    <div class="repo-card">
+                        <div class="repo-header">
+                            <div class="repo-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
+                                </svg>
+                            </div>
+                            <div class="repo-info">
+                                <h3><a href="repository.html" class="repo-title">americas / peru / cusco / machu-picchu / temple-sun</a></h3>
+                                <p class="repo-description">Храм Солнца, георадарное сканирование фундамента</p>
+                            </div>
+                        </div>
+                        <div class="repo-meta">
+                            <span class="meta-item">
+                                <span class="commit-badge theory">Theory</span>
+                                3 новых коммита
+                            </span>
+                            <span class="meta-item">
+                                <svg width="16" height="16" fill="currentColor"><path d="M8 0a8 8 0 110 16A8 8 0 018 0z"/></svg>
+                                Слой II-A
+                            </span>
+                            <span class="meta-item">Обновлено вчера</span>
+                        </div>
+                    </div>
+
+                    <!-- Репозиторий 4 -->
+                    <div class="repo-card">
+                        <div class="repo-header">
+                            <div class="repo-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
+                                </svg>
+                            </div>
+                            <div class="repo-info">
+                                <h3><a href="repository.html" class="repo-title">europe / italy / rome / colosseum / hypogeum</a></h3>
+                                <p class="repo-description">Подземные помещения Колизея, консервация структур</p>
+                            </div>
+                        </div>
+                        <div class="repo-meta">
+                            <span class="meta-item">
+                                <span class="commit-badge preservation">Preservation</span>
+                                12 новых коммитов
+                            </span>
+                            <span class="meta-item">
+                                <svg width="16" height="16" fill="currentColor"><path d="M8 0a8 8 0 110 16A8 8 0 018 0z"/></svg>
+                                Слой IV
+                            </span>
+                            <span class="meta-item">Обновлено 3 дня назад</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Популярные исследования -->
+        <section class="trending-section">
+            <div class="container">
+                <h2>Популярные исследования</h2>
+                <div class="trending-grid">
+                    <div class="trending-card">
+                        <div class="trending-header">
+                            <h3>Неолитические поселения Европы</h3>
+                            <span class="trending-stars">⭐ 342</span>
+                        </div>
+                        <p>Сравнительный анализ керамики из 15 поселений, датировка 5000-3000 до н.э.</p>
+                        <div class="trending-tags">
+                            <span class="tag">Неолит</span>
+                            <span class="tag">Керамика</span>
+                            <span class="tag">Европа</span>
+                        </div>
+                    </div>
+
+                    <div class="trending-card">
+                        <div class="trending-header">
+                            <h3>Римские дороги: сеть логистики</h3>
+                            <span class="trending-stars">⭐ 289</span>
+                        </div>
+                        <p>Картирование торговых путей на основе находок монет и амфор</p>
+                        <div class="trending-tags">
+                            <span class="tag">Римская империя</span>
+                            <span class="tag">Логистика</span>
+                            <span class="tag">Нумизматика</span>
+                        </div>
+                    </div>
+
+                    <div class="trending-card">
+                        <div class="trending-header">
+                            <h3>Майянская письменность: новые интерпретации</h3>
+                            <span class="trending-stars">⭐ 267</span>
+                        </div>
+                        <p>Декодирование надписей из Паленке с применением машинного обучения</p>
+                        <div class="trending-tags">
+                            <span class="tag">Майя</span>
+                            <span class="tag">Эпиграфика</span>
+                            <span class="tag">ML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Платформа</h4>
+                    <ul>
+                        <li><a href="#">API документация</a></li>
+                        <li><a href="#">Обучение</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Сообщество</h4>
+                    <ul>
+                        <li><a href="#">Форум</a></li>
+                        <li><a href="#">Команды</a></li>
+                        <li><a href="#">События</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Поддержка</h4>
+                    <ul>
+                        <li><a href="#">Документация</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>О проекте</h4>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Лицензия</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ArcheoHub. Open Source Platform for Archaeological Data.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

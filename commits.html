@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коммиты - knossos-palace - ArcheoHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <header class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-left">
+                    <a href="index.html" class="logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 2L4 8V14C4 21 8 27 16 30C24 27 28 21 28 14V8L16 2Z" fill="currentColor"/>
+                        </svg>
+                        ArcheoHub
+                    </a>
+                    <nav class="main-nav">
+                        <a href="#" class="nav-link">Исследования</a>
+                        <a href="#" class="nav-link">Находки</a>
+                        <a href="#" class="nav-link">Команды</a>
+                        <a href="#" class="nav-link">Карта</a>
+                    </nav>
+                </div>
+                <div class="nav-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="Поиск репозиториев...">
+                    </div>
+                    <button class="btn-primary">Новое исследование</button>
+                    <div class="user-menu">
+                        <img src="https://via.placeholder.com/32" alt="User" class="avatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Хлебные крошки -->
+        <section class="breadcrumb-section">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <a href="#">europe</a>
+                    <span>/</span>
+                    <a href="#">greece</a>
+                    <span>/</span>
+                    <a href="#">crete</a>
+                    <span>/</span>
+                    <a href="repository.html">knossos-palace</a>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Заголовок репозитория -->
+        <section class="repo-header-section">
+            <div class="container">
+                <div class="repo-title-bar">
+                    <div class="repo-title-left">
+                        <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" class="repo-icon-large">
+                            <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
+                        </svg>
+                        <h1>knossos-palace</h1>
+                        <span class="repo-visibility">Public</span>
+                    </div>
+                    <div class="repo-actions">
+                        <button class="btn-action">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/>
+                            </svg>
+                            Star
+                            <span class="count">127</span>
+                        </button>
+                        <button class="btn-action">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
+                            </svg>
+                            Fork
+                            <span class="count">34</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Навигация репозитория -->
+        <section class="repo-nav-section">
+            <div class="container">
+                <nav class="repo-tabs">
+                    <a href="repository.html" class="repo-tab">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8z"/>
+                        </svg>
+                        Код
+                    </a>
+                    <a href="commits.html" class="repo-tab active">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M11.93 8.5a4.002 4.002 0 01-7.86 0H.75a.75.75 0 010-1.5h3.32a4.002 4.002 0 017.86 0h3.32a.75.75 0 010 1.5h-3.32zM8 6a2 2 0 100 4 2 2 0 000-4z"/>
+                        </svg>
+                        Коммиты
+                        <span class="tab-count">247</span>
+                    </a>
+                    <a href="#" class="repo-tab">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                            <path d="M8 0a8 8 0 110 16A8 8 0 018 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
+                        </svg>
+                        Pull requests
+                        <span class="tab-count">5</span>
+                    </a>
+                    <a href="#" class="repo-tab">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0114.25 13H8.06l-2.573 2.573A1.458 1.458 0 013 14.543V13H1.75A1.75 1.75 0 010 11.25v-9.5z"/>
+                        </svg>
+                        Обсуждения
+                        <span class="tab-count">12</span>
+                    </a>
+                </nav>
+            </div>
+        </section>
+
+        <!-- История коммитов -->
+        <section class="commits-section">
+            <div class="container">
+                <div class="commits-header">
+                    <h2>247 коммитов</h2>
+                    <div class="commits-filters">
+                        <select class="filter-select">
+                            <option>Все типы</option>
+                            <option>Discovery</option>
+                            <option>Analysis</option>
+                            <option>Theory</option>
+                            <option>Preservation</option>
+                            <option>Maintenance</option>
+                        </select>
+                        <select class="filter-select">
+                            <option>Все авторы</option>
+                            <option>Устройства</option>
+                            <option>Исследователи</option>
+                            <option>Модераторы</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="commits-list">
+                    <!-- Коммит 1 -->
+                    <div class="commit-card">
+                        <div class="commit-main">
+                            <div class="commit-avatar-wrapper">
+                                <img src="https://via.placeholder.com/40" alt="GPR Device" class="commit-avatar-large">
+                                <span class="device-badge">📡</span>
+                            </div>
+                            <div class="commit-details">
+                                <div class="commit-title-row">
+                                    <a href="#" class="commit-title-link">Георадарное сканирование западного крыла, сектор B-12</a>
+                                    <span class="commit-badge discovery">Discovery</span>
+                                </div>
+                                <div class="commit-meta-row">
+                                    <span class="commit-author-name">GPR-Device-07</span>
+                                    <span class="commit-verified">✓ Verified device</span>
+                                    <span class="commit-time">2 часа назад</span>
+                                </div>
+                                <div class="commit-stats">
+                                    <span class="commit-stat">
+                                        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
+                                            <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9z"/>
+                                        </svg>
+                                        3 файла
+                                    </span>
+                                    <span class="commit-stat additions">+2,847 точек данных</span>
+                                    <span class="commit-location">📍 35.2981°N, 25.1635°E</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commit-hash-wrapper">
+                            <code class="commit-hash">a3f8b92</code>
+                            <button class="btn-icon" title="Копировать SHA">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"/>
+                                    <path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Коммит 2 -->
+                    <div class="commit-card">
+                        <div class="commit-main">
+                            <div class="commit-avatar-wrapper">
+                                <img src="https://via.placeholder.com/40" alt="Researcher" class="commit-avatar-large">
+                                <span class="user-badge">👤</span>
+                            </div>
+                            <div class="commit-details">
+                                <div class="commit-title-row">
+                                    <a href="#" class="commit-title-link">Радиоуглеродное датирование образцов древесины из помещения 23</a>
+                                    <span class="commit-badge analysis">Analysis</span>
+                                </div>
+                                <div class="commit-meta-row">
+                                    <span class="commit-author-name">Dr. Maria Papadakis</span>
+                                    <span class="commit-org">University of Crete</span>
+                                    <span class="commit-time">5 часов назад</span>
+                                </div>
+                                <div class="commit-stats">
+                                    <span class="commit-stat">
+                                        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
+                                            <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9z"/>
+                                        </svg>
+                                        2 файла
+                                    </span>
+                                    <span class="commit-stat additions">+156 строк</span>
+                                    <span class="commit-stat deletions">−12 строк</span>
+                                </div>
+                                <div class="commit-description">
+                                    Результаты анализа методом AMS указывают на датировку 1680±30 BP (калиброванная дата: 1720-1650 до н.э.). Подтверждает гипотезу о строительстве западного крыла в период MM IIIB.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commit-hash-wrapper">
+                            <code class="commit-hash">b7c4e21</code>
+                            <button class="btn-icon" title="Копировать SHA">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"/>
+                                    <path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Коммит 3 -->
+                    <div class="commit-card">
+                        <div class="commit-main">
+                            <div class="commit-avatar-wrapper">
+                                <img src="https://via.placeholder.com/40" alt="Sensor" class="commit-avatar-large">
+                                <span class="device-badge">🌡️</span>
+                            </div>
+                            <div class="commit-details">
+                                <div class="commit-title-row">
+                                    <a href="#" class="commit-title-link">Мониторинг микроклимата: температура и влажность</a>
+                                    <span class="commit-badge maintenance">Maintenance</span>
+                                </div>
+                                <div class="commit-meta-row">
+                                    <span class="commit-author-name">Climate-Sensor-03</span>
+                                    <span class="commit-verified">✓ Verified device</span>
+                                    <span class="commit-time">вчера</span>
+                                </div>
+                                <div class="commit-stats">
+                                    <span class="commit-stat">
+                                        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
+                                            <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9z"/>
+                                        </svg>
+                                        1 файл
+                                    </span>
+                                    <span class="commit-stat additions">+1,440 измерений</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commit-hash-wrapper">
+                            <code class="commit-hash">c9d2f45</code>
+                            <button class="btn-icon" title="Копировать SHA">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"/>
+                                    <path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Коммит 4 -->
+                    <div class="commit-card">
+                        <div class="commit-main">
+                            <div class="commit-avatar-wrapper">
+                                <img src="https://via.placeholder.com/40" alt="Researcher" class="commit-avatar-large">
+                                <span class="user-badge">👤</span>
+                            </div>
+                            <div class="commit-details">
+                                <div class="commit-title-row">
+                                    <a href="#" class="commit-title-link">Новая интерпретация линейного письма А на табличке KN-234</a>
+                                    <span class="commit-badge theory">Theory</span>
+                                </div>
+                                <div class="commit-meta-row">
+                                    <span class="commit-author-name">Prof. John Chadwick</span>
+                                    <span class="commit-org">Cambridge University</span>
+                                    <span class="commit-time">2 дня назад</span>
+                                </div>
+                                <div class="commit-stats">
+                                    <span class="commit-stat">
+                                        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
+                                            <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9z"/>
+                                        </svg>
+                                        3 файла
+                                    </span>
+                                    <span class="commit-stat additions">+487 строк</span>
+                                </div>
+                                <div class="commit-description">
+                                    Предлагаемая интерпретация связывает знаки с учетом поставок оливкового масла. Сравнение с аналогичными текстами из Фестоса подтверждает экономический контекст документа.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commit-hash-wrapper">
+                            <code class="commit-hash">d4e3a67</code>
+                            <button class="btn-icon" title="Копировать SHA">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"/>
+                                    <path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Коммит 5 -->
+                    <div class="commit-card">
+                        <div class="commit-main">
+                            <div class="commit-avatar-wrapper">
+                                <img src="https://via.placeholder.com/40" alt="Conservator" class="commit-avatar-large">
+                                <span class="user-badge">🛡️</span>
+                            </div>
+                            <div class="commit-details">
+                                <div class="commit-title-row">
+                                    <a href="#" class="commit-title-link">Консервация фресок тронного зала — отчет за ноябрь</a>
+                                    <span class="commit-badge preservation">Preservation</span>
+                                </div>
+                                <div class="commit-meta-row">
+                                    <span class="commit-author-name">Elena Vasilakis</span>
+                                    <span class="commit-org">Hellenic Ministry of Culture</span>
+                                    <span class="commit-time">3 дня назад</span>
+                                </div>
+                                <div class="commit-stats">
+                                    <span class="commit-stat">
+                                        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
+                                            <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9z"/>
+                                        </svg>
+                                        5 файлов
+                                    </span>
+                                    <span class="commit-stat additions">+234 строки</span>
+                                    <span class="commit-images">12 изображений</span>
+                                </div>
+                                <div class="commit-description">
+                                    Завершена стабилизация пигментного слоя на участке 2.3×1.8м. Применена методика японской бумаги с метилцеллюлозой. Состояние улучшено с критического до удовлетворительного.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commit-hash-wrapper">
+                            <code class="commit-hash">e8f7b12</code>
+                            <button class="btn-icon" title="Копировать SHA">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"/>
+                                    <path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Коммит 6 -->
+                    <div class="commit-card">
+                        <div class="commit-main">
+                            <div class="commit-avatar-wrapper">
+                                <img src="https://via.placeholder.com/40" alt="3D Scanner" class="commit-avatar-large">
+                                <span class="device-badge">📷</span>
+                            </div>
+                            <div class="commit-details">
+                                <div class="commit-title-row">
+                                    <a href="#" class="commit-title-link">3D-сканирование керамических фрагментов из помещения 18</a>
+                                    <span class="commit-badge discovery">Discovery</span>
+                                </div>
+                                <div class="commit-meta-row">
+                                    <span class="commit-author-name">3D-Scanner-02</span>
+                                    <span class="commit-verified">✓ Verified device</span>
+                                    <span class="commit-time">неделю назад</span>
+                                </div>
+                                <div class="commit-stats">
+                                    <span class="commit-stat">
+                                        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
+                                            <path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9z"/>
+                                        </svg>
+                                        23 3D модели
+                                    </span>
+                                    <span class="commit-stat additions">+847 MB данных</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commit-hash-wrapper">
+                            <code class="commit-hash">f2a9c34</code>
+                            <button class="btn-icon" title="Копировать SHA">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"/>
+                                    <path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Пагинация -->
+                <div class="pagination">
+                    <button class="pagination-btn" disabled>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M9.78 12.78a.75.75 0 01-1.06 0L4.47 8.53a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 1.06L6.06 8l3.72 3.72a.75.75 0 010 1.06z"/>
+                        </svg>
+                        Предыдущая
+                    </button>
+                    <span class="pagination-info">Страница 1 из 25</span>
+                    <button class="pagination-btn">
+                        Следующая
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Платформа</h4>
+                    <ul>
+                        <li><a href="#">API документация</a></li>
+                        <li><a href="#">Обучение</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Сообщество</h4>
+                    <ul>
+                        <li><a href="#">Форум</a></li>
+                        <li><a href="#">Команды</a></li>
+                        <li><a href="#">События</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Поддержка</h4>
+                    <ul>
+                        <li><a href="#">Документация</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>О проекте</h4>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Лицензия</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ArcheoHub. Open Source Platform for Archaeological Data.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
